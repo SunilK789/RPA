@@ -1,0 +1,421 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WebDataCapturing" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1079,4048" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WebDataCapturing" sap:VirtualizedContainerService.HintSize="664,3983" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="CustomerData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Customer Data" sap:VirtualizedContainerService.HintSize="602,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="customers.xlsx">
+      <ui:ReadRange.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">CustomerData</CSharpReference>
+        </OutArgument>
+      </ui:ReadRange.DataTable>
+    </ui:ReadRange>
+    <ui:Comment DisplayName="Comment Sign In" sap:VirtualizedContainerService.HintSize="602,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Sign up to https://www.theautomationchallenge.com/crm" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CRM App" sap:VirtualizedContainerService.HintSize="602,3826" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,3609" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in CustomerData Variable" sap:VirtualizedContainerService.HintSize="506,3494" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Capture Data" sap:VirtualizedContainerService.HintSize="472,3377" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Full Name of Customer" sap:VirtualizedContainerService.HintSize="410,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">CurrentRow["first name"].ToString() +" " +CurrentRow["last name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type First Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="120, 350, 249, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='input' class='bubble-element Input a1685003243368x1628' aaname='' /&gt;" Guid="05922815-32e0-4118-86ab-7c30329a31a4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP0AAAAvCAYAAAAow8zYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFwSURBVHhe7d2xqqtAFIbR+/7PmBQWIgRsbFIIzmVLFAU5vf5rwS5MbL9xxsZ/DYgieghzGf00Ta3v+/Z+v9vr9TLG3Giq2+q3Or5yin5ZljYMQ+u6ro3j+PsVuJN5ntfgq+Pqubo+OkVfN9QKAdxfxV8P7+r6aI9+WxmA56jwq+vjVn+P/q8zAHBf3+/3tIPfo6/Df60KwLNU19X3Zo++3voBz3TsW/QQQPQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQRvQQ5jL6+n51fbweeJ7L79P3fS96eKBpmta+N3v09UfXdb8r4Cmq6+p7s0dfhmFon8/ndwXcXT3hq+ujU/TLsqw3bCuD7T7czzzPbRzHtePqubo+OkW/2c4Adfivt37GmPtMdVv9Hrf0R5fRA88leojS2n9ODDJw3SEwygAAAABJRU5ErkJggg==" InformativeScreenshot="edb50d53123f8688c80c9af2059ab5e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="First:" CvType="Text" DesignTimeRectangle="52, 350, 68, 28" ElementType="Text" FriendlyName="'First'" FullSelectorArgument="&lt;webctrl aaname='First:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First:' class='content' tag='DIV' type='' check:innerText='First:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAgCAYAAACxSj5wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJKSURBVGhD7ZZPaxpBGIf7vTwtCEIh0IOnPWXpQXqIBLoEki8ghe6lSy/mIoWQQLFQFALrxULpoXgJWwhblI0EVzwsFBcKi+Kv7/4LZtOZacGtNM4Dg+446uyzM793nkDCRQoSIAUJkII4rFYrKYjHdDqVgljM53OMx2MpiMVkMoklSUEMRqMRFouFFMRiOBzGr1IQA6Yg+20JpRK/6Zd+PNa/1KGUNbS+hfH1Y4Iv6KAN50eAgNHCZTLWPVNJmILGpyDp2BgB7A/n6N9sTzxf0MsOkjUiJgyKuAkbZrRSu386i82zMUHF8FgEXZm0xUy6nTXSvoE/QOtoDwrdqHLYgZd+HI4smMcqKmmeVdQTmD0X2Tr0u3rcf7/l/oMIf6ZvCqJgQSrU/Rqan134lFmel/7azIJeVlA7teDcRnnmwek1UaO+LPhpz1L/Fxgkpv7eSXPv/jZ23iXZZ3wtLqP4gh48wajp6MzSQRlMQVWYVw8nH6+O52246XWG97Geeyj8LeZeaIVXT74gRhXLqtcdTEG0xfJjI65bqJLo8++iqrcDGZTPjAyv14BWplx6psM468C+/d0q2GFBMcsQ3rWF9usTqE9J1n4D/SzFY3Zd0DrLAIM31b/KoH/BVgRxQ7rcXPuOWNB/XuYZKygt89qrNgY3PgV/VuZLUE/tu7MQqYR1RPNQDVjRuNxpfftlvsgtNqMD5LGGPZISHR8qah1Gl847+arn9WG8SA6a+flstcxLEqQgAVKQAClIgBQkQAoSIAUJkIIEJIKAX6MSvEFPTVRoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">CurrentRow["first name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Last Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="120, 403, 249, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='5' tag='INPUT' type='input' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="d63765a6-18d8-4e29-bc4d-2a6699a62deb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP0AAAAvCAYAAAAow8zYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFxSURBVHhe7d2xqqtAFIbR+/7PmBQWQQjY2KQQnMsfoowgp9e9FuzCxPYbR5v514BSRA/FiB6KOY1+nuf2er3a8/lsj8fDGHOhSbfpNx2fOUS/rmsbx7ENw9Cmafr9ClzJsizf4NNxek7XvUP0uSErBHB9iT8P73Td26PfVgbgPhJ+uu63+nv0f70DANf1+XwOO/g9+rz8Z1UA7iVdp+/NHn2++gH31PcteihA9FCM6KEY0UMxoodiRA/FiB6KET0UI3ooRvRQjOihGNFDMaKHYkQPxYgeihE9FCN6KEb0UIzooRjRQzGih2JED8WIHooRPRQjeihG9FCM6KEY0UMxoodiTqPPUbY5xxq4n9OjqnNovejhfuZ5/va92aPPH8Mw/K6Au0jX6XuzRx/jOLb3+/27Aq4uT/h03TtEv67r94ZtZbDdh+tZlqVN0/TtOD2n694h+s32DpCX/3z1M8ZcZ9Jt+u239L3T6IH7Ej2U0tp/FKozQv27i6wAAAAASUVORK5CYII=" InformativeScreenshot="d964d3924ae1a18390654e1eab781ffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">CurrentRow["last name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <If sap:VirtualizedContainerService.HintSize="410,672" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">CurrentRow["gender"].ToString() == "Male"</CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Male" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvTextArgument="Male" CvType="Text" DesignTimeRectangle="188, 466, 129, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Male' check:innerText='Male' /&gt;" Guid="a9b2ded2-fe91-4c16-9666-92ce1dd9d4dc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAWCAYAAADuKF/RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALQSURBVGhD7ZjbS1RRFId77R8o6CGIHnyIiiiCRCKEGAqEBMFCIkrNBKchw6YrWoZSjoWaRUZZDJKXZAaMpItaaoZY6qThZdTK7mWjjtfS8RdrMaecc5p0hBNh64PNcPZe7POwv1l7rbMAgqBCpBA0iBSCBpFC0CBSCBpmLcXNWxVYtHwbysrrvDO/GHSPIMaYgbDtR/HVNeidnZm6+lYsXGzgX+HfISAp6ABDwxLxqvejdxaYmprCNesdXhMp5gcBS0HjcEoexr995/lnzR0IWrtTpJhHBCTFuk1xMCdf5muk2FaF/v4hRMWcRnjUCcQaLRopHC1d2LUvHUuCInjEmTLh7H7rXf29FBMTk7DfrsXWCDOvrQ6ORu4VO0bHxr0Rgt4EJMX60Hg0OjphMudg4xYT9u63cJaornMgLbPAR4qWFz1YExILQ3gSCoofwFp0DyEGo8/1o5aCrqLC0kosXRGJA0dyUX6/HsdTr7KE53JLMDnp4ThBXwKWosP5Bm2dr1kKOlBLThH/u9VSPG/t5rV2Zy8/Ew2N7Vi2agdK7A/5WS0FZR7KOgePXfx5PZEoWZdKWa73H/p4TtCXOUlB2MpqEJ94Hp8+u/hZLYWCx+Phw6b5p00dfAXRXoRaCtqb3kGFK8UrgzIGyURZStCfOUuhRi3F8MgYUjOsXEvQwU8fM0mhjleGEifoiy5SUMq/kGfjWuDUmRuorG7Co8cO3mPlhj1+pejqeYfgzQksE8VPH7VPWjAwOMxxgr7oIgV1CglJWdxtUMZQUGoKf1K4h0YRnXAWyWn5XKcoUGHa2vaSZRP0R7dMQcUhXR10wHcrGrjopPaSJPAnBUFfTKn7MB7K5loiL7+Mu5bI3SfxpW/AGyXoiW41havfjZT069yy0jVCn8Gp66A9/iQFCVVV0+TznSIju1CE+IvMWgrh/0GkEDSIFIIGkULQIFIIKoAfTGQ83jPf2OkAAAAASUVORK5CYII=" InformativeScreenshot="6cb9d1292d600348cdbe5dd9d66258c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Female" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvTextArgument="Female" CvType="Text" DesignTimeRectangle="188, 499, 129, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Female' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Female' tag='LABEL' type='' class='' check:innerText='Female' /&gt;" Guid="a45cbdc6-d18f-42ea-b6ef-69dad26ba0d7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAWCAYAAADuKF/RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALqSURBVGhD7ZjbS1RRFId77R+o5+ihp4IookAiRBgKjITogkQXjEoSqcGkLMsu+iBBWUZpOfPQWNhFwwkHSixTQ7KcyaIGzTSjssuYRqk5Myt+i9nTnHOaPM4cMGh9sDm3tdfZzPrOdm9nkCDoECkEAyKFYECkEAyIFIIB01Jcud5IM2fb4jY8n25+jI7R7rzT3HAuJMaUpJi/bBsf77f6DK1/YDASOX2IFNYwJSmWpO4if/dA5M6/h0hhDZZKEQ6HqbnNR+u2FNGsuWto3qJNdKTESYGhkUgEUVv7M/5zU3W5gbJySjlu8YodVFPbRIMfAxyPfmhnK2o1xcV5eWUdLU3L5hzLV+aSs9pDY+M/o8/1UpgZk6BlSlKgeB2dfvoSGI622KLhx8ePvnlnCbk9D6m07Cpf79lfHo1TUuB+2fkbdLO+mWwZeTRnwUZKseVw7K3brZwDcQ6Xh/tNTATpcLGDC3vw2CVquNPOsbiGPCj+n6QwMyZBS9ILzeKTLn4+OjZOuflnaP3WIhoa+sb3QJ27hdciXc97+VpJUeGo50IC79MejrEXnIt+9ciBXKrAaJgVqq81RmNwRJ+MzEMcr5fC7JgELUkvNHv73vFzzBrpGw7w1xw7k7R3vKCFKdv5KwVKChwVqq8SDOgLHAuuVX68D31xru+j8k42JkGLZWsKVYDYWSS2oT9IRgoUM2213ZB7Min08aqpMQlaLJMC0zOm8Wz7Kc1MohoWkSBRKfrefKDU9L28/sA6ROXF++JJYXZMghbLpAgGQ1R4oop3FMMj3yN3iT59/kqPnrykUCjE14lKofrda/FGIn6vKeJJYXZMghbLpACPvX5e2WdmHecdhKvmLhcMW8fuV285JlEpXve/5zyIQ17kx3uQK54UwMyYBC2WSgF8XT1cAPU/gX2FF3jqVyQqBXYqTQ86adXafO6P7XGl000FRy/+VQow2ZgELaalEP4fRArBgEghGBApBAMihaCD6BcQjqq9F4dWSgAAAABJRU5ErkJggg==" InformativeScreenshot="2300c29b2c3ac479808021553d4979d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Address" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="563, 349, 207, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='7' tag='INPUT' type='input' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='7' tag='INPUT' type='input' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="7629c911-bf09-420e-8e5b-d80d22044ff5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANMAAAAvCAYAAAB5V/+7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVHhe7d2xiupgFIXRef9n1MJCBCGNjYWQXLbXP1yvOkyYXa4Fp0hSf+RPmvO1ABVigpK3MV0ul+V4PC77/X7Z7XbGmMekibSRRv73FNM8z8vpdFoOh8MyTdPjLjDcbrd7SGkkraSZ4SmmPEx1wPcSVV44aWZYYxq1AT+ToNLMOPKtMX06BwKfXa/X9TS3xpQPq5QG/FyaSTuxxpQ/FcB2ox0xwS+JCUrEBCVighIxQYmYoERMUCImKBETlIgJSsQEJWKCEjFBiZigRExQIiYoEROUiAlKxAQlYoISMUGJmKBETFAiJigRE5SICUrEBCVighIxQYmYoOQlpuyYyeImYJuX/UzZfiYm2CbbNl82B9ppC9u93Wkb2Rx9Pp8fV8B38kZ6u2095nm+Pxy1OfbBs+ywnabp3khaSTPDU0zDOAfmwyp/KowxfydNpI1xtPvX25iA7cQEFcvyB9hDmRkcjchFAAAAAElFTkSuQmCC" InformativeScreenshot="bf88a5daba804adb3a0d8fe6beb10429.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Address:" CvType="Text" DesignTimeRectangle="453, 349, 110, 28" ElementType="Text" FriendlyName="'Address'" FullSelectorArgument="&lt;webctrl aaname='Address: ' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address: ' class='content' tag='DIV' type='' check:innerText='Address:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAgCAYAAADOmyyBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARySURBVGhD7ZjZK31RFMd//5cHScoD8SAkyZB4IS9KyPSg8EBIeBBJGcILScrwIJKSB2QeMs/zzPr1Xfds9j33nHPP9Su/e077UyfO2evu6bv22mvvP6RwBUpIl6CEdAlKSBfw+fmphHQDR0dHSkinc3t7S7u7u0pIp3NwcMBiKiEdzubmJr29vSkhnc7Gxgb/VUI6HFtCjo2NUUhICHV0dGhf7PH09ERlZWXU1NSkfTEnEFuFL36FfH19pcrKSoqIiKC8vDy6u7vTSvyjhPw9/Ap5eHhIaWlp1NvbS0lJSbS6uqqV+EcJ+Xv4FXJ8fJyysrI4vS0sLGRB7aKE/D0shURYraqqoubmZr7+6e/vp4KCAnp4eNAsvnl/f6eRkRFKTEzk/TQlJYUmJyeptLTURxy7tgsLC5SZmUkrKytUVFREoaGhVF5eTo+Pj1yOerB/p6encz2RkZHcX9xwyDw/P1NPT89Xe0Z2+rrCwsK4zbW1Nc3iG9i+vLxob8GBpZAIq8nJyTyhAMZG4RUid3Z28gQNDAzQ+fk5zc/P80oODw/3EicQW7QLu4yMDJqYmKDLy0uefNSBp6uri8WZmpriMvSroqKCt4KTkxOuA5Pe1tbGDjE7O8t2GAeEzM3N5XcAx4qLi2Mx0af9/X1qaWnh8e7s7LANgHNXV1dTTEzM1+QFA5ZCirB6dXXF71iJWJH68Hp6ekqpqanU19fHEyzAxGLAsjiB2EJIJFkQWo/Yu/VlSMbQR0QPcH19zSJOT0/zuwACwkHQhgjr+nFh5ZeUlNDQ0JD2xSNkbW0tO/je3p729f9jKiQ8GR1uaGjg/wUYLPZKEd7A4uIie/PW1pb2xYMQXhYnEFtMMiZbrBoZlMEh4Bh6UEdjYyM7isi66+rqvPosA7v29nYe18XFhfbVWZgKiQmCxyMcyWDlINzIYcVswo0SmEBtsZqwqvSgDHuZ2YO6UCc4Ozuj4uJi3vfwHatTL+r9/T2LjfCen59Po6OjdHNzo5UGP6ZCYrCYcEyCjFg5InQBswkPRJyfCInEBOEN5foHIVYO3fgfY0GYzMnJ4ZDd3d3tFW0AxMOeizHCpr6+3nQlBxOGQoqwauTp4pHDK8JlfHw8bW9v87vALLTatbUScmlp6Z/2KWSj6AfaMAMJU3Z2ttceGawYCgnPxWocHh728XQ8c3NzHF6FGCKB0Q/YKtmxY2slJPqIMiRkMnDCwcFBWl9f53f8FnZmyQ6yVRENzJKd1tZW7YsHtOGI4wf2RXg7MkMjELZwXSfEQNhCFhodHW3r+GHX1kpI1IP2o6KiuL7j42NenTU1NexkIpnCpOP4kZCQ8HW0wKBx/MDRRRwtIGhsbCxvGahLHD9Qv7xqHXP8wMCRqSLTQ6eNwCTikkBOKPA7TBQO9wi9/i4E7NhaCQk+Pj5oZmbG50IAt1AyGAeii2gPdmhLthN1waFw8YDECEnP8vIyj1fguOOHwlkoIV2CEtIlKCFdghLSJSghXYIS0iUoIV2CR0iivzaeumra/FPkAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">CurrentRow["address"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type City" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="563, 402, 207, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='8' tag='INPUT' type='input' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='8' tag='INPUT' type='input' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="0c5b9076-f34b-4e4d-b505-657b22c6cc83" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANMAAAAvCAYAAAB5V/+7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFZSURBVHhe7d0xa8JQGIXh/v/fqIODCIKLi4PgLaf1hlptaegZnwe+Icn8kpss39sAKsQEJWKCkpcxnc/nsd/vx3a7HZvNxhhznzSRNtLIdw8x3W63cTgcxm63G6fT6X4XmK7X60dIaSStpJnpIaY8THXA7xJVXjhpZlpimrUBf5Og0sw88i0x/XQOBH52uVyW09wSUz6sUhrwd2km7cQSU/5UAOvNdsQE/yQmKBETlIgJSsQEJWKCEjFBiZigRExQIiYoEROUiAlKxAQlYoISMUGJmKBETFAiJigRE5SICUrEBCVighIxQYmYoERMUCImKBETlIgJSsQEJU8xZS1Gds0A6zytlMnCJjHBOlkQ+LTszBpOWO/lGs7Istvj8Xi/An6TN9LLBdGRNex5OGtz7INHc8t6GkkraWZ6iGma58B8WOVPhTHmc9JE2phHu69exgSsJyaoGOMdveGZ6678tAMAAAAASUVORK5CYII=" InformativeScreenshot="8e79e76f8e7a3a4a490cbcc33d3cd106.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="State:" CvType="Text" DesignTimeRectangle="453, 402, 110, 28" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl aaname='City:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='City:' class='content' tag='DIV' type='' check:innerText='City:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAgCAYAAADOmyyBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPSSURBVGhD7ZnLK21RHMfv/3UGMlAGFBEGOolMFKGUqIMBJQOk5JUIA4kUZSBEBl4l70ce5ZV3HnkkfO/9/ux9rbPtc+65Jveeddandsf+rWU5/b7r91jLDxjCms7OTmxsbMAIGeZUVVXh/f3dCBnuVFZWyqcRMswxQmqCEVITAgr59vaG2dlZFBQUIDo6Gh6PB8nJyWhtbcXV1ZU1y/C/4Coku5+enh4kJCSgv78fp6enuL6+xtzcHIqKipCWloa9vT1rNvD6+orJyUksLi5alu9xfn6OwcFB3N3dWRZDqLgKSYdmZGRgamrKsnzy+PiIsrIyVFdX4+XlRWxPT08oLy9HY2OjvH8XboSkpCTs7+9bFkOouApJR2ZlZflFncrw8DCys7Nxc3Mj70bIf4+rkBcXFyLk0NCQpFknl5eXWFpakoik81k/1ccpBmsqa2t8fLyMMzX39vbi+flZxu2N4FxH3Rj8HgsLC8jNzUVUVJTU7dLSUmxvb1sz/GHmYJ2PFAI2O2NjY4iLi0NNTQ2Oj49dBSUU8+zsTJxaW1srUXp7eyt1k7C25uXlSW1dXl6WcQrCiG5qapJ5XPv+/h7T09NITEzEysqKzHt4eJA1yMTEhIwNDAzIRjo4OEBDQ4PYtra2rFkfrK6uIjY2Vsbt76E7AYUkFJACMQJycnLE0XZdVAmWWnd3d1FcXCyOV2Ekp6en4+TkxLIETq0UOT8/X1K6CkWqq6v7Itjm5qY0ah0dHUZIFabG7u5uSY2pqamYmZnxi9Dv1EiKxahURQskJN+9Xu+XyCMU1+fzSSqNZEIS0obO4i17TEwMRkZGLOufhWQdY2Tb51H7cYoWTEja1d9VH7XxilRchWS6s5sZJ4zEvr4+SXVMeSSYkKxXdq3d2dkRh/NhHWRDFaqQnGvXTufDmhxJjY0brkIy2oLtcjqcnefh4aG8BxOypaVF/sXi3BQUJ9TUyo3FesrNZXDHVci1tTVpFthdOvnbiKSN3ayz6eBlQ6iplSm9pKQEXV1dfrWZP7O7np+ftyyfmOPHL+j0trY2aW5YE3kxwOjkp30edIrMyGOUshFSU934+LikVorPq76joyNZk2ukpKT4icbOlrb6+nqZyw1iw7/HdZqbm2UNjre3t7t+F3P8ULAvzQsLC8UpbCroNF7N8UihRgbhebGiokIaGjUt05Gjo6PIzMz8vQY3A6PPmVrtCOOG4Fz1uMGx9fV1ucRXLwTYyTq/izl+GMIWI6QmGCE1wQipCUZITTBCaoIRUhOMkJpghNQEI6QmGCE1wQipCR9CAj8BE0k3yAVbvyoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">CurrentRow["city"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select State" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NSelectItem.Item>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">CurrentRow["state"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NSelectItem.Item>
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Choose a state...</x:String>
+                          <x:String></x:String>
+                          <x:String>Alabama</x:String>
+                          <x:String>Alaska</x:String>
+                          <x:String>Arizona</x:String>
+                          <x:String>Arkansas</x:String>
+                          <x:String>California</x:String>
+                          <x:String>Colorado</x:String>
+                          <x:String>Connecticut</x:String>
+                          <x:String>Delaware</x:String>
+                          <x:String>District of Columbia</x:String>
+                          <x:String>Florida</x:String>
+                          <x:String>Georgia</x:String>
+                          <x:String>Hawaii</x:String>
+                          <x:String>Idaho</x:String>
+                          <x:String>Illinois</x:String>
+                          <x:String>Indiana</x:String>
+                          <x:String>Iowa</x:String>
+                          <x:String>Kansas</x:String>
+                          <x:String>Kentucky</x:String>
+                          <x:String>Louisiana</x:String>
+                          <x:String>Maine</x:String>
+                          <x:String>Maryland</x:String>
+                          <x:String>Massachusetts</x:String>
+                          <x:String>Michigan</x:String>
+                          <x:String>Minnesota</x:String>
+                          <x:String>Mississippi</x:String>
+                          <x:String>Missouri</x:String>
+                          <x:String>Montana</x:String>
+                          <x:String>Nebraska</x:String>
+                          <x:String>Nevada</x:String>
+                          <x:String>New Hampshire</x:String>
+                          <x:String>New Jersey</x:String>
+                          <x:String>New Mexico</x:String>
+                          <x:String>New York</x:String>
+                          <x:String>North Carolina</x:String>
+                          <x:String>North Dakota</x:String>
+                          <x:String>Ohio</x:String>
+                          <x:String>Oklahoma</x:String>
+                          <x:String>Oregon</x:String>
+                          <x:String>Pennsylvania</x:String>
+                          <x:String>Rhode Island</x:String>
+                          <x:String>South Carolina</x:String>
+                          <x:String>South Dakota</x:String>
+                          <x:String>Tennessee</x:String>
+                          <x:String>Texas</x:String>
+                          <x:String>Utah</x:String>
+                          <x:String>Vermont</x:String>
+                          <x:String>Virginia</x:String>
+                          <x:String>Washington</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" DesignTimeRectangle="563, 454, 207, 43" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Choose a state...'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='bubble-element Dropdown dropdown-chevron' aaname='' /&gt;" Guid="e766465c-5076-4718-abb2-98208bbe27ba" InformativeScreenshot="c49ace319bad9127f0be114b4085ce03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="453, 454, 110, 28" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;webctrl aaname='State:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='State:' class='content' tag='DIV' type='' check:innerText='State:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAgCAYAAADOmyyBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVGhD7dGhEQAhDADB9N8GTWEwONQLBAMmX0duTmwFG621VH3Re0/VF2OMVH0x50zVF2utVH3xfV+qvth7p+qLc06qvrj3puqL916qPiMhjIQwEsJICCMhjIQwEsJICCMhjIQwEsJICCMhjIQwEsJICCMhjIQwEsJICCMhjER4+QO11NfdpDX8lAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Home Phone" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="950, 353, 208, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='10' tag='INPUT' type='input' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='10' tag='INPUT' type='input' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="8d311c1f-cb37-4742-bef5-0b3d5d1d75c5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANQAAAAvCAYAAACbi+TCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFbSURBVHhe7d2xisJQFEXR+f9v1MJCBMHGxkLwDWfGSAJRdOaUa8EtEtJu8pLmfg2gRlBQtBrU+Xwe+/1+bLfbsdlsjDH3SRNpI42sWQR1u93G4XAYu91unE6n+11gcr1ef2JKI2klzcwtgsoDqQ94LWHlpZNm5h5BTdUB70lUaWZ+/HsE9epcCKy7XC6LU90jqHxspTjgfWkm7UweQeUPBvC5eTuCgn8SFBQJCooEBUWCgiJBQZGgoEhQUCQoKBIUFAkKigQFRYKCIkFBkaCgSFBQJCgoEhQUCQqKBAVFgoIiQUGRoKBIUFAkKCgSFBQJCooEBUWCgqLVoLKSI7tugM+srrPJ0ihBwWeypHB14ZqVoPC5pytBIwt4j8fj/Qp4JW+mp0urIyvi88BUnSMgLE3b39NIWkkzc4ugJtO5MB9b+YNhjPmdNJE25se8udWggL8RFBQJCmrG+AaEsVU+DzMCIAAAAABJRU5ErkJggg==" InformativeScreenshot="217b7cff1d06fddc5823a25c6c52b563.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Home:" CvType="Text" DesignTimeRectangle="844, 353, 106, 28" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home:' class='content' tag='DIV' type='' check:innerText='Home:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAgCAYAAADzCU3nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALdSURBVGhD7ZnNS2pBGIfv/+XCbQulRDGJiEwEcefONhK1isBVuGjhpgIh1I07QRAEXQRRodA3SWWpRBSp+fXG7z3He4+i3nvr3Lhj88Ag8854Ruc5M75z/EESIZHiBEWKExQpTkC63a4UJyKlUkmKE43n52e6vr6W4kTj9vaW5UlxgnFxcUGtVkuKE43z83N+leIEY6i4q6srslqtdHBwoEb6QbvdbqfDw0M1IvlqPixuXLvk3yPFCYoUJyi6iqvVarS9vU02m40MBgM5HA6KxWLUbDbVHgp4n9vtpmw2Sz6fj4xGI5nNZtrZ2aFGo0Gnp6fk9/s5PjU1xddEXEu73aZkMklLS0s8Fvqtr6/z04RBOp0Of7ZJQjdxmJi1tTXyer20v79Pj4+PlE6naXZ2loLBYJ88vA9SPB4P961WqywYk7+yskLLy8s/rwE5kBoOh1kWwDO63d1dvjEwBvqdnJzQ6uoqOZ1Oenh44H4AfSEe4+VyOTUqPrqJw6QsLCzQzc2NGlHAhCIDPTo6UiOKuOnpaW7rgQmORCJkMpmoUCioUYVoNMor9Onpiet3d3csCHK1vLy88EpFfy247szMzMjvIyJjxWELGle0E7G1tcUr7u3tTY0oYCUGAgFKJBJq5NdW2RPR40/jqC8uLlK5XOa6llAoRJubm3wjTDJjxWUyGZ6swXJ8fEwWi6VPHCYMZZB6vc7bn7ZND3HDbqRewXgYd5LRbav8anFISorFIscGC7bMb73itGK0DGsftVW+vr7y746eW2U+n6f5+XkW913RNTlxuVx9GR0YlZx8RlylUuF6KpXieg9knfF4nM7OztSIgjwOqAxr/9vjwGfEYRvECkYGure3R/f397z6NjY2aG5uji4vL7kfkMcBDWgf9pAZ8pB643yFJOF3B/CPigNYRTjADx7A8QfjIN/mOCD5/5HiBEWKExQpTlCkOEGR4gRFihMUKU5QFHFE70gmYeJ0lSfmAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">CurrentRow["home phone"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Work Phone" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="950, 405, 208, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='11' tag='INPUT' type='input' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='11' tag='INPUT' type='input' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="de169de0-d828-4634-ba29-3d4fd2e5b225" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANQAAAAvCAYAAACbi+TCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVHhe7d2xisJQFEXR+f9v1MJCBCGNjYWQDMcxkkCUceaUa8EtEtJu8pLmfk1AjaCgaDOoy+UyHY/Hab/fT7vdzhjzmDSRNtLIllVQ4zhOp9NpOhwO0zAMj7vA7Ha73WNKI2klzSytgsoDqQ94L2HlpZNmlp5BzdUBv5Oo0szy+PcM6t25ENh2vV5Xp7pnUPnYSnHA76WZtDN7BpU/GMDnlu0ICv5JUFAkKCgSFBQJCooEBUWCgiJBQZGgoEhQUCQoKBIUFAkKigQFRYKCIkFBkaCgSFBQJCgoEhQUCQqKBAVFgoIiQUGRoKBIUFAkKCgSFBQJCooEBUWbQWXHTZZHAZ/Z3A+VLWyCgs9k6+fmBkM7duFzL3fsRjZan8/nxxXwTt5ML7fAxziO9wfm6hwBYS07dYdhuDeSVtLM0iqo2XwuzMdW/mAYY34mTaSN5TFvaTMo4G8EBTXT9A2B5lRscQq50AAAAABJRU5ErkJggg==" InformativeScreenshot="a27916c92b1cfd41d20575d2825cdf6d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Work:" CvType="Text" DesignTimeRectangle="844, 408, 106, 28" ElementType="Text" FriendlyName="'Work'" FullSelectorArgument="&lt;webctrl aaname='Work:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Work:' class='content' tag='DIV' type='' check:innerText='Work:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAgCAYAAADzCU3nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANzSURBVGhD7ZjNKz1RGMd//5eFJGWjS0qS5C5koWSjxMZKYUGhkETKgg2l7OyUhRKhlPe8b7y/y6PP+c3D3JljIjbHPZ/SdGbOzB3nM9/znJl/4nGO19dX8eIc5Pj42ItzjaurK9nb2/PiXOPw8NDI8+IcY2trS56fn70419jc3DRbL84xvDhH8eIcxYtzlJi4paUlqayslKOjo2DPB+yrqKiQ0dHRYE8mMzMz0tDQINfX18Gen8M1W1tb5f7+PtjjgZi4s7Mzqa6ulvn5+WDPB4uLi5KTk2MdyKenJ2lvb5f+/n7zKea38OLsxMQlCSBpRUVFkk6nY4lMEv4TvDg71hpnm/Jub2+lqalJRkZGpLa2NiYoaYr9CV6cHau4jY0NKS8vN1sFITU1NbK+vi5dXV2xRJLG8ABzjL6NjY2Sl5dn/lpaWmR3d9ccV+jPeVNTUzI7OyslJSWmL9My2MRtb2+bWsux8D28vLzI4+Nj0PrbWMWRNBLHwCgkjKSdn5/L3NxcRiI1jRMTE6YNDDzT6vDwsJycnMj+/r50dnZKcXGxrK2tBb0+xCGio6PD9Ds9PZWbmxtzPCoOaTxUQ0NDRpTCFM/5qVTq/Z/6y1jF8RSTKGodA6JtksZgkcSqqioziLCzs2MGXoXc3d1Jc3OzjI2NxRLR3d0tbW1t5rqg4qKpUsLi+BpO6qPSgOtxf0zXyP/rWMUBCWOxwaJDE0XSQBOpbbaaRmDgSMXy8rJphyGJDP7FxYVpq7jp6WnTjqLikFZXVycFBQWysrISHM1ePhVHTePpZdFBokiY1rxwAvVJ1zQC/ZHDNgrXKy0tfT+m4sLTchj2s4rl9wcHB2VgYCAjsdnKp+J0QFl0RGsaaM1jumSr6YPfFse7Y19fnzw8PJgbJs2rq6tBj+zkU3HAYoNVIbWut7c3o14x8NS18fFxsw1LSpoqEW6bKpPEcQ/60Gid7OnpidW5bCJRHIuNwsJCyc/Pz0gUaN0jDWxpK7o4mZyc/PLiJEkcx+mnUOPKysreb17h+ln9OqBcXl5KfX19xtQWhmkUcbZvl999HfiOOD2HjwH6YPAgZP3rgKKLkGh9U5j2cnNzTd2KwrksZnjp/soL+HfEwcLCgpmiDw4OTNu/DnicwItzFC/OUbw4R/HiHMWLcxQvzlG8OEf5L07kDToedi5UWjQKAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">CurrentRow["work phone"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Personal Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="1342, 349, 208, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="eda5b2b1-5321-4cb9-a221-e69ebd47b9c8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANQAAAAvCAYAAACbi+TCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVHhe7d2xisJQFEXR+f9v1MJCBCGNjYWQDMcxkkCUceaUa8EtEtJu8pLmfk1AjaCgaDOoy+UyHY/Hab/fT7vdzhjzmDSRNtLIllVQ4zhOp9NpOhwO0zAMj7vA7Ha73WNKI2klzSytgsoDqQ94L2HlpZNmlp5BzdUBv5Oo0szy+PcM6t25ENh2vV5Xp7pnUPnYSnHA76WZtDN7BpU/GMDnlu0ICv5JUFAkKCgSFBQJCooEBUWCgiJBQZGgoEhQUCQoKBIUFAkKigQFRYKCIkFBkaCgSFBQJCgoEhQUCQqKBAVFgoIiQUGRoKBIUFAkKCgSFBQJCooEBUWbQWXHTZZHAZ/Z3A+VLWyCgs9k6+fmBkM7duFzL3fsRjZan8/nxxXwTt5ML7fAxziO9wfm6hwBYS07dYdhuDeSVtLM0iqo2XwuzMdW/mAYY34mTaSN5TFvaTMo4G8EBTXT9A2B5lRscQq50AAAAABJRU5ErkJggg==" InformativeScreenshot="4d840584daa43126f34c65e0c0c8864d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Personal:" CvType="Text" DesignTimeRectangle="1235, 352, 108, 28" ElementType="Text" FriendlyName="'Personal'" FullSelectorArgument="&lt;webctrl aaname='Personal:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Personal:' class='content' tag='DIV' type='' check:innerText='Personal:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARMSURBVGhD7ZnZK31RFMd//5cHScoDpSiSZEiJKA9KkTEP4gkZSxKlhBQpyvAgHpSSeZ5nMmQe1q/vumef377nnnPv8Sux3f2tk3v23WedvdZn7bX3vv6QlpL6+Pig4+Nj0gAVFeAdHh5qgCrq9vaWdnd3+bMGqKAw8wAR0gAV1ObmJr2+vvJnDVBBbWxsGJ80QCWlASouDVBxaYCKyxHg8PAwhYSE+FxhYWFUUlLC29dg1eDgIJWWltLj46PR8n1yBIhBpqWl0d7eHl1fX5sX7quqqighIYF2dnaM3sElZQBmZGQwNKseHh54FjY1NfHvcMEm5QFCAwMDVFxczDCDTb8CIL4vKCig+/t7vn97e6PR0VEuu1grIyMjudTih1ZZc3NzbHd5eZkKCwspNDSUysrKzERYW1vjdqy1sAN7sAv7si4vL6muro6io6PNfuPj4/T+/m708AjjRLWYmJgwx4ZnOjs76enpyejlEcbQ3d3Ny4Po19ra6hMDJ4B43vr+r9Z/AUQwa2pqGNDLywuX0a6uLnZ8cnKSrq6uaHV1lcrLyyk1NZVOT0+NJz0AATc9PZ0Djr6ADBtYUxMTE6m5uZkODg7o4uKC4cXFxfGmSgjt2dnZnEB4D+77+vooJiaGxyGXdfgRHh5O+fn5ND8/b/bFGNra2szEAIzKykr2eWZmxvQBzyEB5EpjB3BhYYFtIqmsyfaV+jRAZG1PTw9FRUUxDOjo6IhBzc7O8r3Q3d0dB7m3t9do8QCMiIjw6QvhnfKsFkK5lgMGe3l5eXRzc8P3QlNTU5wAgC8Em8nJyV5JBMDwAUkEUBC+LyoqYsiytre32ebi4qLRYg9wZWWFE6i9vf3nAEQZsbvi4+M5S0WmA0pKSgqdnZ3xvayGhgaqr6/36isHThaCh2DhrzyLZD0/P1NFRQW1tLQYLf8Em7AtEguyCzaEPrGxsQzIn5DASGQ3Nr9DfgHaHSOQ9dY6D+fsQItLdhZ9nUoz7I6MjPDag1nT0dFB+/v7Xu+DHdjD+KwSwZa/+wxAlHIsCyiFVh+UBOgUaKvgnB1scaGUyjMwkF2sq5iFtbW1DDMrK8v8p+VXAUTZTUpK4hKOd4uxwyf49qsBYn2A83A2kNwAlAWYjY2NZsD8lVCUcJRyN8G2AsQmKTc312ddFUnxqwGen59z37GxMaPFIyzm/f39tL6+brT4B4h3Om1iMjMzzeBiE4N+mNmynDYxbgA6vXtpaclrwwY52VTmGGEVyiP6w1Hs7k5OTng2VldXc0C3traMnv4BimMEnsPAxDECgZa3/J89RrgBiGMAxi+OMPABiYMNG86qgQD+uGMESopbgBAyb3p62jwswxlsCKw/evsDCKE/zl1iI4HNzNDQEJdSWTjI45Dt5iDvBiCg42iTk5PDwMT48YMDxhsI4I87RmipIQ1QcWmAiksDVFwaoOLSABWXBqi4NEDF9Q8g0V+2yrkPsAU/EAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">CurrentRow["personal email"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Work Email" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="410,218" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="Simulate" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="1342, 402, 208, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tabindex='13' tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tabindex='13' tag='INPUT' type='email' class='bubble-element Input a1685005476090x1628' aaname='' /&gt;" Guid="c2961110-0e83-4296-b234-4e953edbdc5a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANQAAAAvCAYAAACbi+TCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFbSURBVHhe7d2xisJQFEXR+f9v1MJCBMHGxkLwDWfGSAJRdOaUa8EtEtJu8pLmfg2gRlBQtBrU+Xwe+/1+bLfbsdlsjDH3SRNpI42sWQR1u93G4XAYu91unE6n+11gcr1ef2JKI2klzcwtgsoDqQ94LWHlpZNm5h5BTdUB70lUaWZ+/HsE9epcCKy7XC6LU90jqHxspTjgfWkm7UweQeUPBvC5eTuCgn8SFBQJCooEBUWCgiJBQZGgoEhQUCQoKBIUFAkKigQFRYKCIkFBkaCgSFBQJCgoEhQUCQqKBAVFgoIiQUGRoKBIUFAkKCgSFBQJCooEBUWCgqLVoLKSI7tugM+srrPJ0ihBwWeypHB14ZqVoPC5pytBIwt4j8fj/Qp4JW+mp0urIyvi88BUnSMgLE3b39NIWkkzc4ugJtO5MB9b+YNhjPmdNJE25se8udWggL8RFBQJCmrG+AaEsVU+DzMCIAAAAABJRU5ErkJggg==" InformativeScreenshot="979fc0b6386ca4a266aed26a711e86f0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Work:" CvType="Text" DesignTimeRectangle="1235, 402, 108, 28" ElementType="Text" FriendlyName="'Work'" FullSelectorArgument="&lt;webctrl aaname='Work:' class='content' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Work:' class='content' type='' tag='DIV' check:innerText='Work:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZjLK61RGMbP/2UkKQNKkSTJJRkRSgkDA4kMKBNJIhORgTJQykCJgRKFlHvuA9fc5Tnneftelm9/+zs4Jut4f6Xvsvdedu9vP+td6/sFw2tMoOeYQM8xgZ7y8vKCo6MjE+grlHdwcGACfeTq6gq7u7tybgI9hMmjRGICPWRzcxNPT09ybgI9ZGNjIzgzgV4SKXBiYgLV1dW4vr4O7ryxsrKC9PR0TE9PB3fe4HK2p6cH7e3teHx8DO7+G3d3d2hubpbvZCQSKXB9fR35+flyDDM+Po6UlBQRRWEuFE7x31lsExhPpMBkIpgqpis3NzcyoXHiv4oJjCdSYLKp8PT0FCUlJRgZGUFRUVGCKBY52dT7VUxgPEkXMbOzsyguLhZpCvtfeXk5tre3UV9f/66omk53auVxdXUVdXV1SE1Nlb/Gxkbs7OzI68rFxYWMOzc3h6GhIWRkZCAvLw9bW1uRAjkurwsKCuQ9Lg8PD3h+fg6u/n+SCjw8PERhYSEWFxeDO5DksZgs6uDg4LuEUjSFU7yysLCArKws9Pf34/j4GHt7e+jo6EB2drb8GBQVyFT39fXJe09OTnB/f58gUOVlZmbK+C77+/vynRsaGnB7exvc/b9JKlALR1HuNSUSiiorK8PZ2ZlcUzSLR/GEBWQhmShNJGE6urq60Nra+ipfBfb29iakxxXIcaamppCTk5Mgj/CZYGlpKdra2uRzP4GkAgllcaq8ubmRhLHImhyKYj/Ua4rWdBKmjQuapaUluXZh8TkWxREVGCXFFTg/Py/Ta1VVFS4vL4N3/GxiBVIO+wx7HhNGYdoT3URSMEVrOgk/Qyk8huFYTJG+pgLd6VrR/1NbWyufmZycRGVlpSTR+IvA8/NzVFRUyKY93POI9sS1tTUR7fa17xbI5M3MzMg0OjY2hpqaGkvhH2IFsh91dnaipaUFTU1Nsol3YcHZ9wYGBkQ0hStxUyj7J4WFp9A4gcPDw6+9lAsc9l9OqT+dWIGE6UtLS5MEuAkjuvLkkxmKdhcguogZHR398CImTqCuQgnH448marVp24gQXJozSeGEEd37UWDUs9HPbiM+KpBw+uW0vby8HNyxbUSkQC1guP8p7INuP3NhUvi0hpv3j2zkPyOQKevu7n6XZNtGGN5hAj3HBHqOCfQcE+g5JtBzTKDnmEDPeRMI/AYeqHVblo+3pQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">CurrentRow["work email"].ToString()</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to Add Customer To Web System" sap:VirtualizedContainerService.HintSize="410,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e286b25-73fb-416b-942e-311ce1da7df4" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvElementArea="69, 500, 120, 40" CvTextArea="106, 512, 40, 16" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="72, 502, 115, 35" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Add'" FullSelectorArgument="&lt;webctrl aaname='Add' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Add' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Add' /&gt;" Guid="83646d3d-9ecf-4942-aa67-d48a80e8eb15" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVHhe7Zw9a9tAGMf1ZTr1U7hL1n4Bb9k6Z2m6dDIEGgqdOpRCaJcUOmQJtTEkTmnaDM4QXJrUMbhuiQk2WJGjyC/xv/7Lpxejs0sHg3Q8Bz+w7h550M/Pc3egszUcDhEwGAzgeR4cx4Ft2z69Xk9IKYEj+qI3+ov7DOVywHVdP7jVaqHRaKBer+Pi4gLn5+dCyqAX+qEn+qI3+osL9uXSer/fR7fbRbPZxMnJCQ4PD1Eul1EqlVAsFoWUQS/0Q0/0RW/0R4/06culaXZ0Oh1cXl76gZ8Lz1DLr+HX2kP8efRASCn0Q0/0RW/0R4/0Sa8WU5nGOfD1qILv64+1XySkG3qjP3qkT3q1ODEHpVjEZhv6C0o0vVqcjINSrLtByBZBiaZXi6utSqXi125dsJAt6JE+6dXicpqrLlk8mQE90ie9WtwvcVmtCxSyCX3Sq8UNMfdNuiAhm9AnvYpcAxG5BiNyDUbkGkwm5bb364haC3cb+rjF7GKk7r4/LWjGk9intrqjjlvNeBrJoNwcbpvqOas2Pshr4pYhctNJPhITtqtP6OhiFyJyU0lUkq8xqF2rz8tLc/vlHkY9bxY69jD+cozx7GqB3HU4py3cB0G9Gu5+iNwVk0P/p3rGzjHsrQPcq8txeUFp3pxm6UAFaVpSbi6WpbomcldD/h2GKpsmZ9vTvgI8Z3aN33va0nxzpjIW04w92kb3+VO4zaBPI3djL8xq9Krov3iC7vvj8EckcldE+2NNPWAPg51ZX5RlLbiJ0pzH3ZUaZqYH/a8iWQm5O1VM1Ni4mAv7bxuqU+SuglhJdqu4CfrfxmQkSvN8ZrfD/iULqnBOt+G9jvplQbVS3oQlmW3ieiFhS5RmydxsyP0QlORlbfrg8/P3RRnHObeA7uY/5tz4Votz7ta6zLmrxglKskZgXPxoP8o2H1ktp11urCTrVsWxVTSau7G5dUZin/ut+t/7XE/2uUKaELkGI3INRuQaTChX3n40j/DtR3lv2Szm3luWEwdmMXfiQM4KmcXcWSE55WcOiVN+cj7XDOgtcT5XTtZnF/qhp6AU09/cyXr5T4xsQi/0s/g/MYb4C0c98QZrYHXjAAAAAElFTkSuQmCC" InformativeScreenshot="1a45f7c758573208dc803a44cb0db3f7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">CustomerData</CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1609, -9, 1618, 868" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="31e1fae7bb6650d6359cc4ec6e99add6.jpg" Selector="&lt;html app='chrome.exe' title='CRM' /&gt;" Title="CRM" Url="https://www.theautomationchallenge.com/crm" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

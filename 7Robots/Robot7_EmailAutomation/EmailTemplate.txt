@@ -1,0 +1,12 @@
+Dear Human,
+
+Your email automation robot has successfully completed at {0}.
+
+The following logs are recorded:
+
+{1}
+
+Also, please see the attahched image/s.
+
+Thanks,
+Email Robot :)
